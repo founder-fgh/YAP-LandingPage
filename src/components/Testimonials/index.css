@@ -1,0 +1,53 @@
+.slick-dots li button:before {
+  color: white !important;  
+  opacity: 1 !important;    
+}
+
+.slick-dots li.slick-active button:before {
+  color: green !important; 
+}
+
+.slick-slide div{
+  margin: 20px;
+  height: 100%;
+  text-align: left;
+  padding: 10px;
+}
+
+.testimonial-box {
+  position: relative;
+  background-color:transparent;
+  color: white;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.testimonial-box::after {
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  left: 40px;
+  width: 0;
+  height: 0;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  border-top: 22px solid green; 
+}
+
+
+.slider-btn {
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+  display: inline;
+  color: gray
+}
+.slider-btn:hover{
+  color: white;
+  outline: none;
+  border: 0;
+}
+.slider-btn:focus{
+  outline: none;
+  border:0;
+}
