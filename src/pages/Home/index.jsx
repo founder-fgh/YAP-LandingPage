@@ -2,6 +2,7 @@ import Navbar from '../../components/Navbar'
 import Hero from '../../components/Hero'
 import Testimonials from '../../components/Testimonials'
 import WhyChoose from '../../components/WhyChoose'
+import Footer from '../../components/Footer'
 
 const Home = () => (
   <>
@@ -14,6 +15,9 @@ const Home = () => (
     </section>
     <section id="why-choose">
       <WhyChoose />
+    </section>
+    <section id="footer">
+      <Footer />
     </section>
   </>
 )
