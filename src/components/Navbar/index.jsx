@@ -11,9 +11,6 @@ const Navbar = () => (
         <a href="#">About us</a>
       </li>
       <li>
-        <a href="#">Customer Support</a>
-      </li>
-      <li>
         <a href="#">Careers</a>
       </li>
       <li>
