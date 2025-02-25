@@ -27,22 +27,23 @@ const ContactUs = () => {
   }
 
   return (
-    <div className="flex flex-col justify-center w-screen h-screen p-3 mt-10 w-10/12">
-      <div className="flex my-7 w-11/12">
-        <h1 className="text-3xl font-bold p-5 py-3 bg-green-700 rounded-xl text-white">
+    <div className="flex flex-col justify-center md:justify-start items-center w-screen h-screen p-3 md:mt-10 ">
+      <div className="flex flex-col md:flex-row items-start my-7 md:w-11/12">
+        <h1 className="home-bg text-3xl font-bold p-5 py-3 bg-green-700 rounded-xl text-white my-2 md:my-0">
           Contact Us
         </h1>
-        <p className="text-xl text-left ml-5">
-          Feel free to ask if you have any <br />
+        <p className="text-md md:text-xl text-left md:ml-5">
+          Feel free to ask if you have any{' '}
+          <br className="hidden md:block" />
           queries...
         </p>
       </div>
-      <div className="flex justify-between items-center w-11/12 h-[92vh] bg-gray-100 rounded-2xl py-3">
+      <div className="flex justify-between items-center md:w-11/12 bg-gray-100 rounded-2xl py-3 my-3">
         <form
           action="https://api.web3forms.com/submit"
           method="POST"
           onSubmit={submitForm}
-          className="w-1/2 flex flex-col items-strech px-4 ml-10"
+          className="w-screen md:w-1/2 flex flex-col items-strech px-4 md:ml-10"
         >
           <input
             type="hidden"
@@ -94,7 +95,7 @@ const ContactUs = () => {
         </form>
         <div className="justify-self-end self-strech h-full">
           <img
-            className="ml-auto h-full "
+            className="hidden md:block ml-auto h-full "
             src={contactImg}
             alt="contactus-img"
           />

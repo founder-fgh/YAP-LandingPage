@@ -93,7 +93,7 @@ const Testimonials = () => {
           Learn More about Our delivery Services
         </p>
       </div>
-      <div className="slider-container flex flex-col bg-black p-9 rounded-4xl text-white w-11/12 md:h-[85vh]">
+      <div className="slider-container flex flex-col bg-black p-9 rounded-4xl text-white w-11/12 md:max-h-[85vh]">
         <Slider
           ref={slider => {
             sliderRef = slider
