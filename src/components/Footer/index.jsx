@@ -14,52 +14,124 @@ const Footer = () => {
   }
 
   return (
-    <div>
-      <div className="flex justify-between m-6 px-10">
-        <h1 className="w-3/12">YAP</h1>
-        <ul className="flex justify-between w-5/12">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/">About Us</Link>
-          </li>
-          <li>
-            <Link to="/">Careers</Link>
-          </li>
-          <li>
-            <Link to="/">Customer Support</Link>
-          </li>
-        </ul>
-      </div>
-      <div className="flex">
-        <div className="w-3/12">
-          <h1>Contact Us</h1>
-          <p>Email: info@YAP.com</p>
-          <p>Phone: 555-567-5689</p>
-          <p>
-            Address: 1234 Main street, Moonstone city, wxyz bcde -
-            1234
-          </p>
+    <div className="flex w-screen">
+      <div className="bg-black text-white rounded-4xl p-9 mt-16 w-full max-w-11/12 mx-auto px-6 md:px-10 lg:px-16">
+        <div className="flex flex-wrap justify-between px-6 m-6 md:pb-10 transform -translate-x-10">
+          <h1 className="text-white font-extrabold text-5xl tracking-wide">
+            YAP
+          </h1>
+          <div className="ml-auto flex justify-between items-center">
+            <ul className="hidden md:flex flex-col md:flex-row space-x-6 text-white text-sm mt-1">
+              <li>
+                <a className="tab" href="#hero">
+                  <span className="underline cursor-pointer">
+                    Home
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a className="tab" href="#why-choose">
+                  <span className="underline cursor-pointer">
+                    About Us
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a className="tab" href="#">
+                  <span className="underline cursor-pointer">
+                    Careers
+                  </span>
+                </a>
+              </li>
+              <li>
+                <Link className="tab" to="/contact-us">
+                  <span className="underline cursor-pointer">
+                    Customer Support
+                  </span>
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
-        <form
-          onSubmit={submitForm}
-          className="flex items-center w-6/12"
-        >
-          <input
-            value={mail}
-            onChange={onChangeMail}
-            placeholder="Email"
-            type="email"
-            className="border-1 border-white"
-          />
-          <button type="submit">Submit</button>
-        </form>
+        <div className="flex flex-col md:flex-row justify-between w-full">
+          <div className="flex flex-wrap justify-between">
+            <div className="w-1/2 md:w-full text-left">
+              <h2 className="text-lg font-semibold mb-2 md:mb-6">
+                <span className="home-bg text-white px-[7px] pt-[2px] rounded-md">
+                  Contact us:
+                </span>
+              </h2>
+              <p className="md:mb-4">Email: info@YAP.com</p>
+              <p className="md:mb-4">Phone: 555-567-5689</p>
+              <p>
+                Address: 1234 Main St
+                <br />
+                Moonstone City, Stardust State 12345
+              </p>
+            </div>
+            <div className="ml-auto flex justify-between items-center">
+              <ul className="flex flex-col md:flex-row md:hidden space-x-6 text-white text-sm mt-1 text-left">
+                <li>
+                  <a className="tab" href="#hero">
+                    <span className="underline cursor-pointer">
+                      Home
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a className="tab" href="#why-choose">
+                    <span className="underline cursor-pointer">
+                      About Us
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a className="tab" href="#">
+                    <span className="underline cursor-pointer">
+                      Careers
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <Link className="tab" to="/contact-us">
+                    <span className="underline cursor-pointer">
+                      Customer Support
+                    </span>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="w-full md:w-1/2 mt-6 md:mt-0">
+            <form
+              onSubmit={submitForm}
+              className="bg-[#292A32] px-10 py-2 rounded-3xl flex items-center space-x-4 w-full md:max-w-[600px] flex-1 ml-auto h-20 md:h-55"
+            >
+              <input
+                value={mail}
+                onChange={onChangeMail}
+                placeholder="Email"
+                type="email"
+                className="p-2 w-1/2 bg-gray-700 border border-white text-white rounded-3xl h-8 md:h-20"
+                style={{borderColor: 'white'}}
+              />
+              <button
+                type="submit"
+                className="home-bg px-6 py-3 w-auto text-white font-semibold flex items-center justify-center hover:bg-green-700 rounded-full transition whitespace-nowrap h-8 md:h-20"
+              >
+                Subscribe for updates
+              </button>
+            </form>
+          </div>
+        </div>
+        <hr className="mt-10 border-gray-600 mb-10" />
+        <p className="text-sm text-gray-400 text-left py-3">
+          © 2025 YAP. All Rights Reserved.
+          <span className="underline cursor-pointer text-white ml-6">
+            Privacy Policy
+          </span>
+        </p>
       </div>
-      <hr />
-      <p>
-        @ 2025 YAP. All Rights Reserved <span>PrivacyPolicy</span>
-      </p>
     </div>
   )
 }

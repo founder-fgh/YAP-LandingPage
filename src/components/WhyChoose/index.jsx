@@ -29,7 +29,7 @@ const WhyChoose = () => (
         experience
       </p>
     </div>
-    <ul className="flex flex-col md:flex-row justify-evenly items-start bg-black text-white rounded-4xl p-2 md:p-5 py-7 my-5 mx-3 md:mx-10 md:h-[45%]">
+    <ul className="dark-bg flex flex-col md:flex-row justify-evenly items-start bg-black text-white rounded-4xl p-2 md:p-5 py-7 my-5 mx-3 md:mx-10 md:h-[45%]">
       {characteristics.map(charac => {
         const {name, description} = charac
         if (charac === characteristics[characteristics.length - 1]) {

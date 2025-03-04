@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <div>
-      <nav className="home-bg w-screen flex justify-between items-start md:items-start md:pt-10 md:px-15">
+      <nav className="home-bg w-screen flex justify-between items-start md:items-center md:pt-10 md:px-15">
         <div className="w-4/12 md:w-2/12">
           <img className="" src={yapLogo} alt="logo" />
         </div>

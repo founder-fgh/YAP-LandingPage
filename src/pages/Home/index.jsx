@@ -15,7 +15,7 @@ const Home = () => (
     <section id="why-choose">
       <WhyChoose />
     </section>
-    <section id="testimonials">
+    <section className="hidden" id="testimonials">
       <Testimonials />
     </section>
     <section id="footer">

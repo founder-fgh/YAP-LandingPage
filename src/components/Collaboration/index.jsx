@@ -4,7 +4,7 @@ import './index.css'
 const Collaboration = () => (
   <div className="flex flex-col items-center w-screen">
     <marquee
-      className="bg-black text-white py-3 my-5 w-screen"
+      className="dark-bg text-white py-3 my-5 w-screen"
       behaviour="scroll"
       direction="left"
     >
@@ -22,7 +22,7 @@ const Collaboration = () => (
           Contact us today to see how YAP can boost your business with
           lightning fast deliveries and ocal reach!"
         </p>
-        <button className="text-white my-2">
+        <button className="dark-bg text-white my-2">
           Collaborate with us
         </button>
       </div>
