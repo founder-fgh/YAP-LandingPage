@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import {Link} from 'react-router-dom'
-
+import React from 'react'
 const Footer = () => {
   const [mail, setMail] = useState('')
 
@@ -102,7 +102,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full md:w-1/2 mt-6 md:mt-0">
+          {/* <div className="w-full md:w-1/2 mt-6 md:mt-0">
             <form
               onSubmit={submitForm}
               className="bg-[#292A32] px-10 py-2 rounded-3xl flex items-center space-x-4 w-full md:max-w-[600px] flex-1 ml-auto h-20 md:h-55"
@@ -122,7 +122,24 @@ const Footer = () => {
                 Subscribe for updates
               </button>
             </form>
-          </div>
+          </div> */}
+
+          <div className="w-full md:w-1/2 mt-6 md:mt-0 flex justify-end">
+              <form onSubmit={submitForm} className="bg-gray-800 p-4 rounded-xl flex items-center w-full max-w-md">
+                <input 
+                  type="email" 
+                  value={mail} 
+                  onChange={onChangeMail} 
+                  placeholder="Email" 
+                  className="flex-1 p-2 bg-gray-700 border border-white text-white rounded-l-lg" 
+                />
+                <button 
+                  type="submit" 
+                  className="bg-green-600 px-4 py-2 text-white rounded-r-lg hover:bg-green-700">
+                  Subscribe
+                </button>
+              </form>
+            </div>
         </div>
         <hr className="mt-10 border-gray-600 mb-10" />
         <p className="text-sm text-gray-400 text-left py-3">

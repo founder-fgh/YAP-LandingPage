@@ -4,7 +4,7 @@ import Collaboration from '../../components/Collaboration'
 import Testimonials from '../../components/Testimonials'
 import WhyChoose from '../../components/WhyChoose'
 import Footer from '../../components/Footer'
-
+import React from 'react'
 const Home = () => (
   <>
     <Navbar />
