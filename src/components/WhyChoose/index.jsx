@@ -6,7 +6,7 @@ const characteristics = [
   {
     name: "Fast & Reliable",
     description: `Get your orders delivered in just 30 minutes in Atmakur.
-        No more waiting - your essentials arrive at lightning speed!`,
+        No more waiting - your essentials arrive at lightning speed`,
   },
   {
     name: "Local Support",
