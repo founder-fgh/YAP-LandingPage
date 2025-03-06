@@ -61,12 +61,12 @@ const Footer = () => {
                   Contact us:
                 </span>
               </h2>
-              <p className="md:mb-4">Email: info@YAP.com</p>
-              <p className="md:mb-4">Phone: 555-567-5689</p>
+              <p className="md:mb-4">Email: yap.delivery@outlook.com</p>
+              <p className="md:mb-4">Phone: 91772 40286</p>
               <p>
-                Address: 1234 Main St
+                Address: Shop No 8, opp Abhiram Hospital
                 <br />
-                Moonstone City, Stardust State 12345
+               Atmakur Mandal, SPSR Nellore District
               </p>
             </div>
             <div className="ml-auto flex justify-between items-center">
